@@ -16,8 +16,8 @@ Once the linked list is fully initialized start 3 threads: a traverser, a remove
 of a Node, which we can call prior. Every time it enters the head of the linked list (including
 when first starting) it sets prior to null. Like the traverser, it pauses on entry to a node, but for
 a shorter time, just 10ms. The, if the current Node is not the head, it does one of the following:\
-  – 40% of the time If prior is null then it sets prior to the current Node.\
-  – 10% of the time If prior is not null then it removes all Nodes strictly between prior
+– 40% of the time If prior is null then it sets prior to the current Node.\
+– 10% of the time If prior is not null then it removes all Nodes strictly between prior
 and the current one from the linked-list. After doing so it should print out a message “cutting
 from A to B“, replacing A and B with the prior and current Node name.\
   – 50% of the time It does nothing.\
